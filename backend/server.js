@@ -10,6 +10,7 @@ const wss = new WebSocket.Server({ server });
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
+  console.log("got http get req")
   res.send('OTP Relay Server is running. Connect via WebSocket.');
 });
 
